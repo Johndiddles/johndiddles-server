@@ -30,7 +30,7 @@ const contactController = async (req, res, next) => {
   const response = await client.send({
     from: sender,
     to: recipients,
-    subject: `PORTFOLIO CONTACT - ${email}`,
+    subject: `NEW CONTACT - ${name} - ${email}`,
     text: message,
     category: "Portfolio Contacts",
   });
